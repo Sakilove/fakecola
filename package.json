@@ -1,0 +1,26 @@
+{
+  "name": "TyrantaXBlog",
+  "version": "0.1.0",
+  "description": "TyrantaX's Blog",
+  "main": "gulpfile.js",
+  "author": "TyrantaX",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-jekyll": "0.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sakilove/tyrantax"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ]
+}

@@ -1,0 +1,33 @@
+<div style="margin:0 auto;text-align: center">
+    {% include follow.html %}
+</div>
+
+<div class="center">
+    {% assign categoryStr = "" %}
+    {% for post in site.posts %}
+    {% if post.hide != true %}
+
+    {% capture categoryStr %}
+    {{categoryStr}},[{{post.category}}]
+    {% endcapture %}
+
+    {% endif%}
+    {% endfor%}
+    {% assign categoryStr = categoryStr | remove_first:',' %}
+    {% assign categoryArr = categoryStr | split: ',' %}
+    {% assign categoryUniqArr = categoryStr | split:',' | uniq %}
+    {% for uniqCategory in categoryUniqArr %}
+    {% assign counter = 0 %}
+    {% for  category in categoryArr %}
+    {% if uniqCategory == category %}
+    {% assign counter = counter | plus:1 %}
+    {% endif %}
+    {% endfor %}
+    {% assign curCategory = uniqCategory | remove_first:'[' | remove_first:']' %}
+    <a class="tape" href="{{ site.url }}/all?category={{curCategory}}" onclick="_gaq.push(['_trackEvent', '{{curCategory}}', 'InNav', window.location.pathname]);">{{curCategory}}<span>{{counter}}</span></a>
+    {% endfor %}
+</div>
+
+
+
+

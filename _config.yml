@@ -1,0 +1,29 @@
+name: "Blog of TyrantaX"
+description: "Web Engineering Blog by TyrantaX"
+
+url: "http://www.freeclan.net/tyrantax"
+loadingImg: "http://www.freeclan.net/tyrantax/img/loading.gif"
+filePath: "http://www.freeclan.net/tyrantax/img"
+
+timezone: Asia/Beijing
+
+paginate: 16
+paginate_path: "/page:num"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+
+permalink: pretty
+
+gems:
+- jekyll-paginate
+exclude: ["node_modules"]
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
