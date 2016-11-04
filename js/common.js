@@ -57,7 +57,7 @@ function processPageView(rows) {
     });
 }
 
-LazyLoad.css('/fakecola/css/font.css');
+LazyLoad.css('/font/font.css');
 
 LazyLoad.js('/js/blogjs/jquery-1.11.1.min.js', function () {
     hideRecentSectionWhenNoPost();
