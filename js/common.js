@@ -57,9 +57,9 @@ function processPageView(rows) {
     });
 }
 
-LazyLoad.css('/tyrantax/css/font.css');
+LazyLoad.css('/fakecola/css/font.css');
 
-LazyLoad.js('/tyrantax/js/jquery-1.11.1.min.js', function () {
+LazyLoad.js('/js/blogjs/jquery-1.11.1.min.js', function () {
     hideRecentSectionWhenNoPost();
 
     $('h1').each(function() {
@@ -74,12 +74,12 @@ LazyLoad.js('/tyrantax/js/jquery-1.11.1.min.js', function () {
     });
 
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === false) {
-        LazyLoad.js('/tyrantax/js/jquery.timeago.min.js', function () {
+        LazyLoad.js('/js/blogjs/jquery.timeago.min.js', function () {
             $('.timeago').timeago().show();
         });
     }
 
-    LazyLoad.js('/tyrantax/js/unviel.min.js', function () {
+    LazyLoad.js('/js/blogjs/unviel.min.js', function () {
         $("img").unveil();
 
         // google pageview
@@ -95,7 +95,7 @@ LazyLoad.js('/tyrantax/js/jquery-1.11.1.min.js', function () {
                     // if fail to get up-to-date data from GAE, get cached local version
                     console.log('Failed to get page view from GAE!');
                     $.ajax({
-                        url: '/tyrantax/pageview.json',
+                        url: '/fakecola/pageview.json',
                         dataType: 'json',
                         success: function(data) {
                             console.log('Local page view used.');
@@ -124,8 +124,8 @@ LazyLoad.js('/tyrantax/js/jquery-1.11.1.min.js', function () {
 
 // emoji
 setTimeout(function() {
-    LazyLoad.css('/tyrantax/css/emojify.min.css', function () {
-        LazyLoad.js('/tyrantax/js/emojify.min.js', function () {
+    LazyLoad.css('/fakecola/css/emojify.min.css', function () {
+        LazyLoad.js('/js/blogjs/emojify.min.js', function () {
             emojify.setConfig({
                 emoticons_enabled: true,
                 people_enabled: true,

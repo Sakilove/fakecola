@@ -1,9 +1,9 @@
-name: "Blog of TyrantaX"
-description: "Web Engineering Blog by TyrantaX"
+name: "Blog of Fakecola"
+description: "Web Engineering Blog by Fakecola"
 
-url: "http://www.freeclan.net/tyrantax"
-loadingImg: "http://www.freeclan.net/tyrantax/img/loading.gif"
-filePath: "http://www.freeclan.net/tyrantax/img"
+url: "http://www.freeclan.net/fakecola"
+loadingImg: "http://www.freeclan.net/fakecola/img/loading.gif"
+filePath: "http://www.freeclan.net/fakecola/img"
 
 timezone: Asia/Beijing
 
