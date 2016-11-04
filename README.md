@@ -1,6 +1,6 @@
-# Blog of TyrantaX
+# Blog of Fakecola
 
-Blog: http://www.freeclan.net/tyrantax.
+Blog: http://www.freeclan.net/fakecola.
 
 Topics: Web Front-End Developing and More.
 
